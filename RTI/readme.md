@@ -1,5 +1,6 @@
-RSSI based radio tomographic imaging (RTI) algorithm. 
+Supporting files for RSSI based radio tomographic imaging (RTI) algorithm. 
 
+genW.m: Generating W in y=Wx based on elliptical model<sup>1</sup>.
 
 References
 ----------
