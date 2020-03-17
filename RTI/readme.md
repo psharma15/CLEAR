@@ -1,4 +1,4 @@
-Attempting RSSI based radio tomographic imaging (RTI) algorithm. 
+RSSI based radio tomographic imaging (RTI) algorithm. 
 
 
 References
