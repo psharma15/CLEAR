@@ -9,9 +9,7 @@
 ## Imaging Problem Model
 <p align="left">
   <img width="400" src="./Figure/ImageModelScatter.gif">
-  <em> Scatter Model. </em>
   <img width="400" src="./Figure/ImageModelRTI.gif">
-  <em> RTI Model. </em>
 </p>
 
 There are two linear problem models developed, using:
