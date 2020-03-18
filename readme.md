@@ -3,12 +3,25 @@
 
 <p align="center">
   <img width="800" src="./Figure/setupPic1.png">
+  <figcaption>{{Figure showing RFID setup in a room for assisted living application, that can be used to estimate number of occupants in a room and their approximate positions. }}</figcaption>
 </p>
 
-## Problem Model
+## Imaging Problem Model
 There are two linear problem models developed, using:
 - Multipath scattering-based<sup>1</sup> (mainly depending on phase), and 
 - Line-of-Sight (LoS) attenuation-based<sup>2</sup> (mainly depends on received signal strength (RSS)).
+
+<p align="center">
+  <img width="800" src="./Figure/scaledSetupPic.jpg">
+  <figcaption>{{Left figure shows simualted setup arrangement. A 1/6 scaled setup was simulated using CST software with 1/6th scaled objects as well, with result shown on the right, using scattering model.}}</figcaption>
+</p>
+
+The problem model from both the approximations look like linear inverse problem of form y=Ax, with x as the reflectivity/ occupancy at each voxel in the imaging domain. There are various methods to solve this problem, depending on the characteristics of A. Our model has highly ill-conditioned and fat A matrix. Size of y is of the order of (#Tags * #Receivers * #Frequencies), and size of x is equal to number of voxels. Thus, it is highly underdetermined problem with size(y) << size(x). Also, in order to solve in real-time, the algorithm should be computationally efficient.
+
+We have used fastest matched-filtering algorithm, and also employed sparsity based solutions, orthogonal matching pursuit (OMP) and fast iterative shrinkage thresholding algorithm (FISTA)<sup>3<\sup>.
+
+## Occupancy Counting
+While generated image can provide correct number estimate for upto 2 objects, greater than that, the linear problem model is not valid. So we're using an intelligent neural network based approach, that is able to detect upto 5 object with high accuracy of 93% as shown in the following image.
 
 
 References
