@@ -10,10 +10,6 @@
 ![](./Figure/ImageModelScatter.gif)  |  ![](./Figure/ImageModelRTI.gif)
 :-------------------------:|:-------------------------:
 Scatter Model              |  RTI Model
-<p align="left">
-  <img width="400" src="./Figure/ImageModelScatter.gif">
-  <img width="400" src="./Figure/ImageModelRTI.gif">
-</p>
 
 There are two linear problem models developed, using:
 - Multipath scattering-based<sup>1</sup> (mainly depending on phase), and 
