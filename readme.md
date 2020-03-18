@@ -7,6 +7,9 @@
 </p>
 
 ## Imaging Problem Model
+![](./Figure/ImageModelScatter.gif)  |  ![](./Figure/ImageModelRTI.gif)
+:-------------------------:|:-------------------------:
+Scatter Model              |  RTI Model
 <p align="left">
   <img width="400" src="./Figure/ImageModelScatter.gif">
   <img width="400" src="./Figure/ImageModelRTI.gif">
