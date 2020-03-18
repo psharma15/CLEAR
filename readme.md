@@ -7,9 +7,10 @@
 </p>
 
 ## Imaging Problem Model
-<img src="./Figure/ImageModelScatter.gif?raw=true" width="400px">  |  <img src="./Figure/ImageModelRTI.gif?raw=true" width="400px">
-:-------------------------:|:-------------------------:
-Scatter Model              |  RTI Model
+<p align="left">
+  <img src="./Figure/ImageModelScatter.gif?raw=true" width="400px">
+  <img src="./Figure/ImageModelRTI.gif?raw=true" width="400px">
+</p>
 
 There are two linear problem models developed, using:
 - Multipath scattering-based<sup>1</sup> (mainly depending on phase), and 
