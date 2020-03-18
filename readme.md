@@ -14,7 +14,7 @@ There are two linear problem models developed, using:
 </p>
 - Multipath scattering-based<sup>1</sup> (mainly depending on phase), and 
 <p align="center">
-  <img src="./Figure/ImageModelRTI.gif?raw=true" width="200px"> <em> RTI Model </em>
+  <img src="./Figure/ImageModelRTI.gif?raw=true" width="400px"> <em> RTI Model </em>
 </p>
 - Line-of-Sight (LoS) attenuation-based<sup>2</sup> (mainly depends on received signal strength (RSS)).
 
