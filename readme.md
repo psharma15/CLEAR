@@ -12,8 +12,8 @@ There are two linear problem models developed, using:
 - Line-of-Sight (LoS) attenuation-based<sup>2</sup> (mainly depends on received signal strength (RSS)).
 
 <p align="center">
-  <img width="800" src="./Figure/scaledSetupPic.jpg">
-  <em> Left figure shows simualted setup arrangement. A 1/6 scaled setup was simulated using CST software with 1/6th scaled objects as well, with result shown on the right, using scattering model. </em>
+  <img width="850" src="./Figure/scaledSetupPic.jpg">
+  <em> Left figure shows simualted setup arrangement. A 1/6 scaled room and object setup was simulated using CST software, with result shown on the right using scattering model. </em>
 </p>
 
 The problem model from both the approximations look like linear inverse problem of form y=Ax, with x as the reflectivity/ occupancy at each voxel in the imaging domain. There are various methods to solve this problem, depending on the characteristics of A. Our model has highly ill-conditioned and fat A matrix. Size of y is of the order of (#Tags * #Receivers * #Frequencies), and size of x is equal to number of voxels. Thus, it is highly underdetermined problem with size(y) << size(x). Also, in order to solve in real-time, the algorithm should be computationally efficient.
