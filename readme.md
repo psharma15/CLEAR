@@ -7,6 +7,13 @@
 </p>
 
 ## Imaging Problem Model
+<p align="left">
+  <img width="400" src="./Figure/ImageModelScatter.gif">
+  <em> Scatter Model. </em>
+  <img width="400" src="./Figure/ImageModelRTI.gif">
+  <em> RTI Model. </em>
+</p>
+
 There are two linear problem models developed, using:
 - Multipath scattering-based<sup>1</sup> (mainly depending on phase), and 
 - Line-of-Sight (LoS) attenuation-based<sup>2</sup> (mainly depends on received signal strength (RSS)).
@@ -18,11 +25,17 @@ There are two linear problem models developed, using:
 
 The problem model from both the approximations look like linear inverse problem of form y=Ax, with x as the reflectivity/ occupancy at each voxel in the imaging domain. There are various methods to solve this problem, depending on the characteristics of A. Our model has highly ill-conditioned and fat A matrix. Size of y is of the order of (#Tags * #Receivers * #Frequencies), and size of x is equal to number of voxels. Thus, it is highly underdetermined problem with size(y) << size(x). Also, in order to solve in real-time, the algorithm should be computationally efficient.
 
-We have used fastest matched-filtering algorithm, and also employed sparsity based solutions, orthogonal matching pursuit (OMP) and fast iterative shrinkage thresholding algorithm (FISTA)<sup>3</sup>.
+We have used fastest matched-filtering algorithm, and also employed sparsity based solutions, orthogonal matching pursuit (OMP) and fast iterative shrinkage thresholding algorithm (FISTA)<sup>3</sup>. Following figure shows we can estimate true object number and accurate location for most cases with one person standing in a 4m x 4m room. The results are calculated using OMP algorithm.
+
+
 
 ## Occupancy Counting
 While generated image can provide correct number estimate for upto 2 objects, greater than that, the linear problem model is not valid. So we're using an intelligent neural network based approach, that is able to detect upto 5 object with high accuracy of 93% as shown in the following image.
 
+<p align="center">
+  <img width="850" src="./Figure/scaledSetupPic.jpg">
+  <em> Left figure shows simualted setup arrangement. A 1/6 scaled room and object setup was simulated using CST software, with result shown on the right using scattering model. </em>
+</p>
 
 References
 ----------
