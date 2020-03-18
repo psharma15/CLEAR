@@ -32,7 +32,7 @@ We have used fastest matched-filtering algorithm, and also employed sparsity bas
 While generated image can provide correct number estimate for upto 2 objects, greater than that, the linear problem model is not valid. So we're using an intelligent neural network based approach, that is able to detect upto 5 object with high accuracy of 93% as shown in the following image.
 
 <p align="center">
-  <img width="850" src="./Figure/scaledSetupPic.jpg">
+  <img width="850" src="./Figure/AI_OccCount_result1.png">
   <em> Left figure shows simualted setup arrangement. A 1/6 scaled room and object setup was simulated using CST software, with result shown on the right using scattering model. </em>
 </p>
 
