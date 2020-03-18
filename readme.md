@@ -7,7 +7,7 @@
 </p>
 
 ## Imaging Problem Model
-+<img src="./Figure/ImageModelScatter.gif?raw=true" width="200px">  |  ![](./Figure/ImageModelRTI.gif)
+<img src="./Figure/ImageModelScatter.gif?raw=true" width="200px">  |  ![](./Figure/ImageModelRTI.gif)
 :-------------------------:|:-------------------------:
 Scatter Model              |  RTI Model
 
