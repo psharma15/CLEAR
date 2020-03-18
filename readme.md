@@ -2,8 +2,8 @@
 *This project uses backscattered signal from ambient RFID tags to count the number of occupants and their locaitons in a room using machine learning and inverse problem solutions.*
 
 <p align="center">
-  <img width="800" src="./Figure/setupPic1.png">
-  <em>Figure showing RFID setup in a room for assisted living application, that can be used to estimate number of occupants in a room and their approximate positions. </em>
+  <img width="850" src="./Figure/setupPic1.png">
+  <em> Figure showing RFID setup in a room for assisted living application, that can be used to estimate number of occupants in a room and their approximate positions. </em>
 </p>
 
 ## Imaging Problem Model
