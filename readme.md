@@ -1,5 +1,5 @@
 # CLEAR: Counting and Location Estimate using Ambient Radio signals
-*This project uses backscattered signal from ambient RFID tags to count the number of occupants and their locaitons in a room using machine learning and inverse problem solutions.*
+*This project uses backscattered signal from ambient RFID tags to count the number of occupants and their locations in a room using machine learning and inverse problem solutions.*
 
 <p align="center">
   <img width="850" src="./Figure/setupPic1.png">
