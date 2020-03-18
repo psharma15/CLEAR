@@ -24,7 +24,9 @@ The problem model from both the approximations look like linear inverse problem 
 
 We have used fastest matched-filtering algorithm, and also employed sparsity based solutions, orthogonal matching pursuit (OMP) and fast iterative shrinkage thresholding algorithm (FISTA)<sup>3</sup>. Following figure shows we can estimate true object number and accurate location for most cases with one person standing in a 4m x 4m room. The results are calculated using OMP algorithm.
 
-
+<p align="center">
+  <img src="./Figure/ompResultCalib42.gif?raw=true" width="400px">  
+</p>
 
 ## Occupancy Counting
 While generated image can provide correct number estimate for upto 2 objects, greater than that, the linear problem model is not valid. So we're using an intelligent neural network based approach, that is able to detect upto 5 object with high accuracy of 93% as shown in the following image.
