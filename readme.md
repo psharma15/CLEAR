@@ -11,7 +11,7 @@
 There are two linear problem models developed, using:
 <p align="center">
   <img src="./Figure/ImageModelScatter.gif?raw=true" width="400px"> 
-  <figcaption> Scatter Model </figcaption>
+  <figcaption align="center"> Scatter Model </figcaption>
 </p>
 - Multipath scattering-based<sup>1</sup> (mainly depending on phase), and 
 <p align="center">
