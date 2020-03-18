@@ -7,13 +7,15 @@
 </p>
 
 ## Imaging Problem Model
-<p align="left">
-  <img src="./Figure/ImageModelScatter.gif?raw=true" width="200px"> <em> Scatter Model </em>
-  <img src="./Figure/ImageModelRTI.gif?raw=true" width="200px"> <em> RTI Model </em>
-</p>
 
 There are two linear problem models developed, using:
+<p align="center">
+  <img src="./Figure/ImageModelScatter.gif?raw=true" width="400px"> <em> Scatter Model </em>
+</p>
 - Multipath scattering-based<sup>1</sup> (mainly depending on phase), and 
+<p align="center">
+  <img src="./Figure/ImageModelRTI.gif?raw=true" width="200px"> <em> RTI Model </em>
+</p>
 - Line-of-Sight (LoS) attenuation-based<sup>2</sup> (mainly depends on received signal strength (RSS)).
 
 <p align="center">
