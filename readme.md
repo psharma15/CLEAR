@@ -22,7 +22,7 @@ There are two linear problem models developed, using:
 
 The problem model from both the approximations look like linear inverse problem of form y=Ax, with x as the reflectivity/ occupancy at each voxel in the imaging domain. There are various methods to solve this problem, depending on the characteristics of A. Our model has highly ill-conditioned and fat A matrix. Size of y is of the order of (#Tags * #Receivers * #Frequencies), and size of x is equal to number of voxels. Thus, it is highly underdetermined problem with size(y) << size(x). Also, in order to solve in real-time, the algorithm should be computationally efficient.
 
-We have used fastest matched-filtering algorithm, and also employed sparsity based solutions, orthogonal matching pursuit (OMP) and fast iterative shrinkage thresholding algorithm (FISTA)<sup>3</sup>. Following figure shows we can estimate true object number and accurate location for most cases with one person standing in a 4m x 4m room. The results are calculated using OMP algorithm.
+We have used fastest matched-filtering algorithm, and also employed sparsity based solutions, orthogonal matching pursuit (OMP) and fast iterative shrinkage thresholding algorithm (FISTA)<sup>3</sup>. Following figure shows we can estimate true object number and accurate location for most cases with one person standing in a 4m x 4m room. The imaging results are calculated using OMP algorithm, and show detected number of clusters using connected component labeling<sup>4</sup>, and their centroid location. For the shown result our algorithm can accuractely detect 1 cluster, with median error of 0.36 m.
 
 <p align="center">
   <img src="./Figure/ompResultCalib42.gif?raw=true" width="400px">  
@@ -41,4 +41,5 @@ References
 (https://doi.org/10.1109/INFOCOM.2016.7524577)
 2. J. Wilson and N. Patwari, "Radio Tomographic Imaging with Wireless Networks," in IEEE Transactions on Mobile Computing, vol. 9, no. 5, pp. 621-632, May 2010.
 3. A. Beck and M. Teboulle. "A fast iterative shrinkage-thresholding algorithm for linear inverse problems." SIAM journal on imaging sciences 2, no. 1 (2009): 183-202.
+4. https://people.sc.fsu.edu/~jburkardt/m_src/image_components/i4block_components.m
 
