@@ -29,7 +29,7 @@ We have used fastest matched-filtering algorithm, and also employed sparsity bas
 </p>
 
 ## Occupancy Counting
-While generated image can provide correct number estimate for upto 2 objects, greater than that, the linear problem model is not valid. So we're using an intelligent neural network based approach, that is able to detect upto 5 object with high accuracy of 93% as shown in the following image. Following figure shows confusion table with true vs predicted number of occupants.
+While generated image can provide correct number estimate for upto 2 objects, greater than that, the linear problem model is not valid. So we're using an intelligent neural network based approach, that is able to detect upto 5 object with high accuracy of 93% as shown in the following image. Following figure shows confusion table with true vs predicted number of occupants. Python's Pytorch library is used to achieve the results.
 
 <p align="center">
   <img width="400" src="./Figure/AI_OccCount_result1.png">
