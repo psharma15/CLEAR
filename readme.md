@@ -17,7 +17,7 @@ There are two linear problem models developed, using:
 
 <p align="center">
   <img width="850" src="./Figure/scaledSetupPic.jpg">
-  <em align="center"> The Left figure shows a setup arrangement. Its *1/6* scaled model was simulated using CST software, with the result shown on the right using the scattering model-based reconstruction. </em>
+  <em align="center"> The Left figure shows a setup arrangement. Its 1/6 scaled model was simulated using CST software, with the result shown on the right using the scattering model-based reconstruction. </em>
 </p>
 
 The problem model from both the approximations look like linear inverse problem of form y=Ax, with x as the reflectivity/ occupancy at each voxel in the imaging domain. There are various methods to solve this problem, depending on the characteristics of A. Our model has highly ill-conditioned and fat A matrix. Size of y is of the order of (#Tags * #Receivers * #Frequencies), and size of x is equal to number of voxels. Thus, it is highly underdetermined problem with size(y) << size(x). Also, in order to solve in real-time, the algorithm should be computationally efficient.
